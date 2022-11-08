@@ -2,8 +2,9 @@ const { Sequelize, DataTypes } = require('sequelize');
 
 const pgHost = process.env.POSTGRES_HOST || "localhost"
 const pgDatabase = process.env.POSTGRES_DB || "weather"
-const pgPassword = process.env.POSTGRES_PASSWORD || "password"
-const pgUser = process.env.POSTGRES_USER || "user"
+const pgPassword = process.env.POSTGRES_PASSWORD || "qwerty"
+const pgUser = process.env.POSTGRES_USER || "postgres"
+
 
 const sequelize = new Sequelize(`postgres://${pgUser}:${pgPassword}@${pgHost}:5432/${pgDatabase}`, {
     pool: {
